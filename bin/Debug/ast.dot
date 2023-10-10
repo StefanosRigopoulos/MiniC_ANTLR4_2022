@@ -1,0 +1,162 @@
+digraph G{
+subgraph cluster0 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+NT_STATEMENTEXPR_1;NT_STATEMENTFOR_5;
+label = "statementContext";
+}
+subgraph cluster1 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+
+label = "functionDefinitionContext";
+}
+NT_COMPILEUNIT_0->NT_STATEMENTEXPR_1;
+subgraph cluster2 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+NT_ASSIGNMENT_2;
+label = "bodyExpr";
+}
+NT_STATEMENTEXPR_1->NT_ASSIGNMENT_2;
+subgraph cluster3 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+NT_VARIABLE_3;
+label = "leftContext";
+}
+subgraph cluster4 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+NT_INTEGER_4;
+label = "rightContext";
+}
+NT_ASSIGNMENT_2->NT_VARIABLE_3;
+NT_ASSIGNMENT_2->NT_INTEGER_4;
+NT_COMPILEUNIT_0->NT_STATEMENTFOR_5;
+subgraph cluster5 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+NT_ASSIGNMENT_6;
+label = "startFor";
+}
+subgraph cluster6 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+NT_LESSERTHAN_9;
+label = "conditionFor";
+}
+subgraph cluster7 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+NT_PLUSONE_12;
+label = "loopFor";
+}
+subgraph cluster8 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+NT_STATEMENTCOMPOUND_14;
+label = "bodyFor";
+}
+NT_STATEMENTFOR_5->NT_ASSIGNMENT_6;
+subgraph cluster9 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+NT_VARIABLE_7;
+label = "leftContext";
+}
+subgraph cluster10 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+NT_INTEGER_8;
+label = "rightContext";
+}
+NT_ASSIGNMENT_6->NT_VARIABLE_7;
+NT_ASSIGNMENT_6->NT_INTEGER_8;
+NT_STATEMENTFOR_5->NT_LESSERTHAN_9;
+subgraph cluster11 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+NT_VARIABLE_10;
+label = "leftContext";
+}
+subgraph cluster12 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+NT_INTEGER_11;
+label = "rightContext";
+}
+NT_LESSERTHAN_9->NT_VARIABLE_10;
+NT_LESSERTHAN_9->NT_INTEGER_11;
+NT_STATEMENTFOR_5->NT_PLUSONE_12;
+subgraph cluster13 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+NT_VARIABLE_13;
+label = "bodyContext";
+}
+NT_PLUSONE_12->NT_VARIABLE_13;
+NT_STATEMENTFOR_5->NT_STATEMENTCOMPOUND_14;
+subgraph cluster14 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+NT_STATEMENTEXPR_15;
+label = "bodyCompound";
+}
+NT_STATEMENTCOMPOUND_14->NT_STATEMENTEXPR_15;
+subgraph cluster15 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+NT_ASSIGNMENT_16;
+label = "bodyExpr";
+}
+NT_STATEMENTEXPR_15->NT_ASSIGNMENT_16;
+subgraph cluster16 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+NT_VARIABLE_17;
+label = "leftContext";
+}
+subgraph cluster17 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+NT_ADDITION_18;
+label = "rightContext";
+}
+NT_ASSIGNMENT_16->NT_VARIABLE_17;
+NT_ASSIGNMENT_16->NT_ADDITION_18;
+subgraph cluster18 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+NT_VARIABLE_19;
+label = "leftContext";
+}
+subgraph cluster19 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+NT_INTEGER_20;
+label = "rightContext";
+}
+NT_ADDITION_18->NT_VARIABLE_19;
+NT_ADDITION_18->NT_INTEGER_20;
+}

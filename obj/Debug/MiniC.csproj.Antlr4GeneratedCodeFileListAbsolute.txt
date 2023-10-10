@@ -1,0 +1,6 @@
+D:\UOP\7th Semester\Compilers II\Laboratory\MiniC\obj\Debug\MiniCLexer.cs
+D:\UOP\7th Semester\Compilers II\Laboratory\MiniC\obj\Debug\MiniCParser.cs
+D:\UOP\7th Semester\Compilers II\Laboratory\MiniC\obj\Debug\MiniCListener.cs
+D:\UOP\7th Semester\Compilers II\Laboratory\MiniC\obj\Debug\MiniCBaseListener.cs
+D:\UOP\7th Semester\Compilers II\Laboratory\MiniC\obj\Debug\MiniCVisitor.cs
+D:\UOP\7th Semester\Compilers II\Laboratory\MiniC\obj\Debug\MiniCBaseVisitor.cs

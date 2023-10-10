@@ -1,0 +1,2 @@
+﻿  input.c
+D:\UOP\7th Semester\Compilers II\Laboratory\MiniC\Testbench\input.c(11): error C4700: uninitialized local variable 'a' used

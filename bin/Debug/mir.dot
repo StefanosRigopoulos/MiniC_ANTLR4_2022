@@ -1,0 +1,85 @@
+digraph {
+	subgraph cluster0{
+		node [style=filled,color=white];
+		style=filled;
+		color=lightgrey;
+		CT_CODEREPOSITORY_3;CT_CODEREPOSITORY_4;
+		label=PREPROCESSOR;
+	}
+	subgraph cluster1{
+		node [style=filled,color=white];
+		style=filled;
+		color=lightgrey;
+		CT_FUNCTION_DEFINITION_1;
+		label=FUNCTION_DEFINITION;
+	}
+"CT_FILE_0"->"CT_CODEREPOSITORY_3"
+"CT_FILE_0"->"CT_CODEREPOSITORY_4"
+	subgraph cluster2{
+		node [style=filled,color=white];
+		style=filled;
+		color=lightgrey;
+		CT_COMPOUNDCONTAINER_2;
+		label=BODY;
+	}
+	subgraph cluster3{
+		node [style=filled,color=white];
+		style=filled;
+		color=lightgrey;
+		CT_CODEREPOSITORY_5;CT_FORCONTAINER_9;
+		label=COMPOUNDSTATEMENT_BODY;
+	}
+	subgraph cluster4{
+		node [style=filled,color=white];
+		style=filled;
+		color=lightgrey;
+		CT_CODEREPOSITORY_7;CT_CODEREPOSITORY_12;
+		label=COMPOUNDSTATEMENT_DECLARATIONS;
+	}
+"CT_COMPOUNDCONTAINER_2"->"CT_CODEREPOSITORY_7"
+"CT_COMPOUNDCONTAINER_2"->"CT_CODEREPOSITORY_12"
+"CT_COMPOUNDCONTAINER_2"->"CT_CODEREPOSITORY_5"
+	subgraph cluster5{
+		node [style=filled,color=white];
+		style=filled;
+		color=lightgrey;
+		CT_CODEREPOSITORY_11;
+		label=START;
+	}
+	subgraph cluster6{
+		node [style=filled,color=white];
+		style=filled;
+		color=lightgrey;
+		CT_CODEREPOSITORY_14;
+		label=FINALIZATION;
+	}
+	subgraph cluster7{
+		node [style=filled,color=white];
+		style=filled;
+		color=lightgrey;
+		CT_CODEREPOSITORY_17;
+		label=STEP;
+	}
+	subgraph cluster8{
+		node [style=filled,color=white];
+		style=filled;
+		color=lightgrey;
+		CT_COMPOUNDCONTAINER_10;
+		label=BODY;
+	}
+"CT_FORCONTAINER_9"->"CT_CODEREPOSITORY_11"
+"CT_FORCONTAINER_9"->"CT_CODEREPOSITORY_14"
+"CT_FORCONTAINER_9"->"CT_CODEREPOSITORY_17"
+	subgraph cluster9{
+		node [style=filled,color=white];
+		style=filled;
+		color=lightgrey;
+		CT_CODEREPOSITORY_19;
+		label=COMPOUNDSTATEMENT_BODY;
+	}
+"CT_COMPOUNDCONTAINER_10"->"CT_CODEREPOSITORY_19"
+"CT_FORCONTAINER_9"->"CT_COMPOUNDCONTAINER_10"
+"CT_COMPOUNDCONTAINER_2"->"CT_FORCONTAINER_9"
+"CT_FUNCTION_DEFINITION_1"->"CT_COMPOUNDCONTAINER_2"
+"CT_FILE_0"->"CT_FUNCTION_DEFINITION_1"
+}
